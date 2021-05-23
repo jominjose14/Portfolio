@@ -1,39 +1,38 @@
-body {
+html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
+}
 
+body, .box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
 
   font-family: Arial;
+  font-size: 24px;
 }
 
 .box {
   margin: auto;
-  padding: 30px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 28px 24px;
 
   border-radius: 16px;
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 15%);
 }
 
 a {
-  width: 50vw;
+  width: 40vw;
   margin: 10px auto;
-  padding: 12px;
+  padding: 10px;
 
   text-align: center;
   text-decoration: none;
-  color: black;
+  color: rgba(0,0,0,70%);
 
-  border-radius: 16px;
+  border-radius: 12px;
   border: 1px solid rgba(0,0,0,15%);
 }
 
@@ -43,7 +42,35 @@ a:hover {
 }
 
 @media only screen and (min-width: 768px) {
+  body, .box {
+    font-size: 32px;
+  }
+
+  .box {
+    padding: 50px 40px;
+    border-radius: 20px;
+  }
+
+  a {
+    width: 25vw;
+    padding: 10px;
+    border-radius: 16px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body, .box {
+    font-size: 20px;
+  }
+
+  .box {
+    padding: 36px 30px;
+    border-radius: 16px;
+  }
+
   a {
     width: 12vw;
+    padding: 10px;
+    border-radius: 12px;
   }
 }
