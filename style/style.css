@@ -1,0 +1,97 @@
+:root {
+  --primary: dodgerblue;
+  --faint-grey: rgba(0,0,0,0.5);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+
+  font-family: Helvetica, sans-serif;
+  color: white;
+  font-size: 0.75rem;
+
+  background-color: white;
+  padding: 4em 2em;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: auto;
+}
+
+a.tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  box-sizing: border-box;
+  width: 7rem;
+  height: 7rem;
+  padding: 1.25rem 0.75rem;
+  box-shadow: 0 0 12px 0 rgba(0,0,0,0.075);
+  border-radius: 0.75rem;
+
+  text-align: center;
+  text-decoration: none;
+  color: var(--faint-grey);
+
+  transition: 0.2s;
+}
+
+a.tile:hover {
+  scale: 1.05;
+  box-shadow: 2px 4px 8px rgba(0,0,0,0.075), -0.5px 0 0 0.5px rgba(0,0,0,0.01), 0 -0.5px 0 0.5px rgba(0,0,0,0.05); 
+}
+
+a.tile img {
+  height: 2.75rem;
+  width: 2.75rem;
+  filter: invert(45%) sepia(70%) saturate(1037%) hue-rotate(185deg) brightness(101%) contrast(101%);
+}
+
+@media only screen and (min-width: 768px) {
+  
+}
+
+@media only screen and (min-width: 1200px) {
+  .box {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.75rem;
+  }
+
+  a.tile {
+    height: 20rem;
+    width: 20rem;
+    padding: 0.5rem;
+    gap: 1.5rem;
+    font-size: 1.25rem;
+    border-radius: 0;
+  }
+
+  a.tile:hover {
+    border-radius: 0;
+  }
+
+  a.tile img {
+    height: 12rem;
+    width: 12rem;
+  }
+
+  .projects a.tile img {
+    border-radius: 0.75rem;
+    height: 11rem;
+    width: 17rem;
+  }
+}
