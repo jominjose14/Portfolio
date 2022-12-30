@@ -1,0 +1,15 @@
+.tile .title {
+    font-size: 0.5rem;
+    padding-inline: 0.75em;
+}
+
+.tile {
+    height: 7.75rem;
+    width: 7.75rem; 
+}
+
+@media only screen and (min-width: 1200px) {
+    .tile .title {
+        font-size: 0.75rem;
+    }
+}

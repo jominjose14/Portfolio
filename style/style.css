@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 :root {
   --primary: dodgerblue;
   --faint-grey: rgba(0,0,0,0.5);
@@ -14,7 +16,7 @@ body {
   align-items: center;
   justify-items: center;
 
-  font-family: Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: white;
   font-size: 0.75rem;
 
@@ -22,14 +24,33 @@ body {
   padding: 4em 2em;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  width: 100%;
+  font-size: 1.25rem;
+  /* font-weight: bold; */
+  /* color: var(--faint-grey); */
+  color: var(--primary);
+  padding-bottom: 0.5rem;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  margin-bottom: 2.5rem;
+}
+
 .box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 1em;
   margin: auto;
 }
 
-a.tile {
+.tile {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,9 +60,10 @@ a.tile {
   box-sizing: border-box;
   width: 7rem;
   height: 7rem;
-  padding: 1.25rem 0.75rem;
+  padding: 1.25em 0.75em;
   box-shadow: 0 0 12px 0 rgba(0,0,0,0.075);
   border-radius: 0.75rem;
+  background-color: rgba(255,255,255,0.75);
 
   text-align: center;
   text-decoration: none;
@@ -50,47 +72,101 @@ a.tile {
   transition: 0.2s;
 }
 
-a.tile:hover {
+.tile:hover {
   scale: 1.05;
   box-shadow: 2px 4px 8px rgba(0,0,0,0.075), -0.5px 0 0 0.5px rgba(0,0,0,0.01), 0 -0.5px 0 0.5px rgba(0,0,0,0.05); 
 }
 
-a.tile img {
+.tile img {
   height: 2.75rem;
   width: 2.75rem;
   filter: invert(45%) sepia(70%) saturate(1037%) hue-rotate(185deg) brightness(101%) contrast(101%);
 }
 
 @media only screen and (min-width: 768px) {
-  
+  .heading {
+    font-size: 1.75rem;
+  }
+
+  .box {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+  }
+
+  .tile {
+    height: 18rem;
+    width: 18rem;
+    padding: 0.5em;
+    gap: 1.25em;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+  }
+
+  .index .tile {
+    height: 12rem;
+    width: 12rem;
+    padding: 0.25em;
+    gap: 0.8em;
+    font-size: 0.75rem;
+  }
+
+  .index .tile img {
+    height: 7.5rem;
+    width: 7.5rem;
+  }
+
+  .tile img {
+    height: 10.5rem;
+    width: 10.5rem;
+  }
+
+  .projects .tile img {
+    border-radius: 0.75em;
+    height: 10rem;
+    width: 16.5rem;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-  .box {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.75rem;
+  .heading {
+    font-size: 2rem;
   }
 
-  a.tile {
+  .box {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75em;
+  }
+
+  .tile {
     height: 20rem;
     width: 20rem;
-    padding: 0.5rem;
-    gap: 1.5rem;
+    padding: 0.5em;
+    gap: 1.5em;
     font-size: 1.25rem;
-    border-radius: 0;
+    border-radius: 1em;
   }
 
-  a.tile:hover {
-    border-radius: 0;
+  .index .tile {
+    height: 14rem;
+    width: 14rem;
+    padding: 0.3em;
+    gap: 1em;
+    font-size: 1rem;
   }
 
-  a.tile img {
+  .index .tile img {
+    height: 9rem;
+    width: fit-content;
+    max-width: 9rem;
+  }
+
+  .tile img {
     height: 12rem;
     width: 12rem;
   }
 
-  .projects a.tile img {
-    border-radius: 0.75rem;
+  .projects .tile img {
+    border-radius: 0.75em;
     height: 11rem;
     width: 17rem;
   }

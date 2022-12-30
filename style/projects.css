@@ -1,0 +1,59 @@
+.projects .tile {
+    position: relative;
+    height: 7rem;
+    width: 7rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.projects .tile .title {
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
+    color: white;
+    font-size: 0.5rem;
+    padding: 0.3em;
+    border: none;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    transition: 0.2s;
+}
+
+.projects .tile:hover .title {
+    opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+    .box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+
+    .projects .tile {
+        height: 12rem;
+        width: 18rem;
+    }
+    
+    .projects .tile .title {
+        font-size: 0.65rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .box {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+    }
+
+    .projects .tile {
+        height: 14rem;
+        width: 20rem;
+    }
+    
+    .projects .tile .title {
+        font-size: 1rem;
+        opacity: 0;
+    }
+}
