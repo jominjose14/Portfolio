@@ -13,158 +13,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <script type="module" defer src="script/projects.js"></script>
   </head>
 
   <body>
     <div class="main-container">
       <div class="heading">CS Projects</div>
-
-      <div class="box projects">
-        <a
-          target="_blank"
-          class="tile"
-          style="
-            background-image: url(image/the-wild-oasis.png);
-            background-size: 105% 105%;
-            background-position: -0.5rem 1.6rem;
-            background-color: black;
-          "
-          href="https://the-wild-oasis-mgmt.vercel.app"
-        >
-          <div class="title">The Wild Oasis (Web App)</div>
-        </a>
-
-        <a
-          target="_blank"
-          class="tile"
-          style="
-            background-image: url(image/the-wild-oasis.png);
-            background-size: 105% 105%;
-            background-position: -0.5rem 1.6rem;
-            background-color: black;
-          "
-          href="https://youtu.be/vajksh7zW9M"
-        >
-          <div class="title">The Wild Oasis (Video Demo)</div>
-        </a>
-
-        <a
-          target="_blank"
-          class="tile"
-          style="background-image: url(image/sleepywheels.jpg)"
-          href="https://www.youtube.com/watch?v=KaCROQi2XRs"
-        >
-          <div class="title">SleepyWheels</div>
-        </a>
-
-        <a
-          target="_blank"
-          class="tile"
-          style="background-image: url(image/mimic.jpg)"
-          href="https://youtu.be/F9RwOJvrfzw"
-        >
-          <div class="title">Mimic</div>
-        </a>
-
-        <a
-          target="_blank"
-          class="tile"
-          style="background-image: url(image/flame.jpeg)"
-          href="https://youtu.be/7fJv2bOYd84"
-        >
-          <div class="title">Flame (Gameplay)</div>
-        </a>
-
-        <a
-          target="_blank"
-          class="tile"
-          style="background-image: url(image/flame.jpeg)"
-          href="https://drive.google.com/file/d/1qUhjNmYzwxXGe5akgQ0y2EurWHvWqiF4/view?usp=share_link"
-        >
-          <div class="title">Flame (Download)</div>
-        </a>
-
-        <a
-          target="_blank"
-          class="tile"
-          style="background-image: url(image/facemask.jpg)"
-          href="https://www.youtube.com/watch?v=DMgSwCbm8EM"
-        >
-          <div class="title">FaceMask</div>
-        </a>
-
-        <a
-          target="_blank"
-          class="tile"
-          style="background-image: url(image/personal-trainer.jpg)"
-          href="https://youtu.be/cy5hFlAnVS8"
-        >
-          <div class="title">AI Personal Trainer</div>
-        </a>
-
-        <a
-          target="_blank"
-          class="tile"
-          style="background-image: url(image/flappy-bird.jpg)"
-          href="https://youtu.be/2E4o2leGtTk"
-        >
-          <div class="title">AI plays Flappy Bird</div>
-        </a>
-
-        <a
-          target="_blank"
-          class="tile"
-          style="background-image: url(image/ice.png)"
-          href="https://ice-app-f7186.web.app/"
-        >
-          <div class="title">Ice</div>
-        </a>
-
-        <a
-          target="_blank"
-          class="tile"
-          style="background-image: url(image/melody.png)"
-          href="https://jominjose14.github.io/melody/"
-        >
-          <div class="title">Melody</div>
-        </a>
-
-        <a
-          target="_blank"
-          class="tile"
-          style="background-image: url(image/drumkit.jpg)"
-          href="https://jominjose14.github.io/drumkit-7.0/"
-        >
-          <div class="title">DrumKit 7.0</div>
-        </a>
-
-        <a
-          target="_blank"
-          class="tile"
-          style="background-image: url(image/lazy-bird.png)"
-          href="https://www.youtube.com/watch?v=VUkZguVlQK4"
-        >
-          <div class="title">Lazy Bird</div>
-        </a>
-
-        <a
-          target="_blank"
-          class="tile"
-          style="background-image: url(image/muzik.png)"
-          href="https://www.youtube.com/watch?v=xCsOT1tNK2k"
-        >
-          <div class="title">Muzik</div>
-        </a>
-
-        <a
-          target="_blank"
-          class="tile"
-          style="background-image: url(image/tom-vs-jerry.jpg)"
-          href="https://youtu.be/O-cqOHBODUI"
-        >
-          <div class="title">Tom vs Jerry</div>
-        </a>
-      </div>
+      <div class="box index"></div>
     </div>
+
+    <div class="dark-light-switch">
+      <img src="image/sun.svg" alt="Light Mode" />
+    </div>
+
+    <dialog id="project-dialog">
+      <span class="dialog-close">&times;</span>
+      <div class="dialog-main">
+        <div class="project-box">
+          <div class="img-box"></div>
+          <div class="about"></div>
+          <div class="tech"></div>
+        </div>
+        <div class="links"></div>
+      </div>
+    </dialog>
+
+    <template id="project-link-template">
+      <a href="https://github.com/jominjose14/ice" target="_blank">
+        <img src="image/github.svg" alt="Source Code" />
+        <span>Source Code</span>
+      </a>
+    </template>
   </body>
 </html>

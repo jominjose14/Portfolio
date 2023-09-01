@@ -1,59 +1,138 @@
-.projects .tile {
-    position: relative;
-    height: 7rem;
-    width: 7rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-}
+dialog {
+  position: fixed;
+  inset: 0;
+  height: fit-content;
+  width: fit-content;
+  border: none;
+  border-radius: 0.75rem;
+  outline: none; /* TODO: Add artificial outline for keyboard nav */
 
-.projects .tile .title {
+  &::backdrop {
+    backdrop-filter: blur(10px);
+  }
+
+  & .dialog-close {
+    cursor: pointer;
     position: absolute;
-    bottom: 0;
-    opacity: 1;
-    color: white;
-    font-size: 0.5rem;
-    padding: 0.3em;
-    border: none;
-    background-color: rgba(0,0,0,0.5);
-    width: 100%;
-    transition: 0.2s;
-}
+    top: 0.5rem;
+    right: 0.5rem;
+    color: red;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 0.6;
+    padding: 0.35rem;
+    border-radius: 50%;
+    background-color: rgba(254, 103, 103, 0.25);
+  }
 
-.projects .tile:hover .title {
-    opacity: 1;
+  & .dialog-main {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+
+    & .project-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+
+      & > * {
+        max-width: 12rem;
+      }
+
+      & .img-box {
+        height: 12rem;
+        width: 12rem;
+
+        & img {
+          height: 100%;
+          width: 100%;
+          border-radius: 0.75rem;
+        }
+      }
+
+      & .about {
+        color: inherit;
+        font-size: 0.85rem;
+        text-align: center;
+      }
+
+      & .tech {
+        display: flex;
+        /* justify-content: center; */
+        gap: 0.5rem;
+        flex-wrap: wrap;
+
+        & div {
+          font-size: 0.6rem;
+          border-radius: 9999px;
+          padding: 0.25rem 0.5rem;
+          border: 1px solid var(--white);
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    & .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+
+      & a {
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+        font-size: 0.75rem;
+        font-weight: 900;
+        outline: none; /* TODO: Add artificial outline for keyboard nav */
+        padding: 0.5rem;
+        border-radius: 999px;
+
+        & img {
+          height: 1.5rem;
+          width: 1.5rem;
+        }
+
+        &:hover {
+          background-color: var(--primary);
+          color: var(--white);
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    .box {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1em;
+  dialog {
+    & .dialog-close {
+      background-color: transparent;
+
+      &:hover {
+        background-color: rgba(254, 103, 103, 0.25);
+      }
     }
 
-    .projects .tile {
-        height: 12rem;
-        width: 18rem;
-    }
-    
-    .projects .tile .title {
-        font-size: 0.65rem;
-    }
-}
+    & .dialog-main {
+      flex-direction: row;
 
-@media only screen and (min-width: 1200px) {
-    .box {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1em;
-    }
+      & .links {
+        margin-right: 0.75rem;
 
-    .projects .tile {
-        height: 14rem;
-        width: 20rem;
+        & a {
+          width: 100%;
+          font-size: 0.9rem;
+          padding: 0.75rem;
+        }
+      }
     }
-    
-    .projects .tile .title {
-        font-size: 1rem;
-        opacity: 0;
-    }
+  }
 }
