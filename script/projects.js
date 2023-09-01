@@ -58,7 +58,7 @@ function createAnchor(type, link, svgName, parent) {
   anchor.href = link;
   anchor.querySelector("span").innerText = type;
   anchor.querySelector("img").alt = type;
-  anchor.querySelector("img").src = `image/${svgName}.svg`;
+  anchor.querySelector("img").src = `../image/${svgName}.svg`;
   parent.appendChild(anchor);
 }
 
