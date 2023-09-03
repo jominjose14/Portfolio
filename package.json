@@ -1,0 +1,24 @@
+{
+  "name": "mylinktree",
+  "version": "1.0.0",
+  "description": "Showcases a profile with links to various categories of activities & projects",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:w": "vite build --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jominjose14/MyLinkTree.git"
+  },
+  "author": "jomin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jominjose14/MyLinkTree/issues"
+  },
+  "homepage": "https://github.com/jominjose14/MyLinkTree#readme",
+  "devDependencies": {
+    "vite": "^4.4.9"
+  }
+}

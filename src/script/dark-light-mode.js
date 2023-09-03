@@ -1,10 +1,11 @@
-// Initialize with OS settings
-if (window.matchMedia(`(prefers-color-scheme: dark)`).matches) {
-  document.documentElement.classList.add("dark-mode");
-  document.documentElement.classList.remove("light-mode");
-} else {
-  document.documentElement.classList.remove("dark-mode");
-  document.documentElement.classList.add("light-mode");
+export function initDarkLightMode() {
+  if (window.matchMedia(`(prefers-color-scheme: dark)`).matches) {
+    document.documentElement.classList.add("dark-mode");
+    document.documentElement.classList.remove("light-mode");
+  } else {
+    document.documentElement.classList.remove("dark-mode");
+    document.documentElement.classList.add("light-mode");
+  }
 }
 
 export function attachEventHandler() {

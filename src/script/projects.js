@@ -1,7 +1,11 @@
 import { projects } from "./projects-list.js";
-import { attachEventHandler as addDarkLightToggleListener } from "./dark-light-mode.js";
+import {
+  initDarkLightMode,
+  attachEventHandler as addDarkLightToggleListener,
+} from "./dark-light-mode.js";
 
 window.onload = () => {
+  initDarkLightMode();
   addDarkLightToggleListener();
   loadProjects();
   addEventListeners();
