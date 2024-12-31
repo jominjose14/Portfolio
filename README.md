@@ -1,2 +1,2 @@
-# MyLinkTree
+# Portfolio
 Showcases a profile with links to various categories of activities & projects

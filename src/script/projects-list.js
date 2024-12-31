@@ -1,5 +1,13 @@
 export const projects = [
   {
+    name: "Goal",
+    image: "goal.svg",
+    about: "An online multiplayer air hockey game web app",
+    tech: "go,canvas,websockets",
+    webApp: "https://goal-pb1a.onrender.com",
+    sourceCode: "https://github.com/jominjose14/goal",
+  },
+  {
     name: "The Wild Oasis",
     image: "the-wild-oasis.png",
     about: "A hotel management web app",
@@ -7,6 +15,14 @@ export const projects = [
     webApp: "https://the-wild-oasis-mgmt.vercel.app",
     demoVideo: "https://youtu.be/vajksh7zW9M",
     sourceCode: "https://github.com/jominjose14/the-wild-oasis",
+  },
+  {
+    name: "Ice",
+    image: "ice.png",
+    about: "A Twitter-like social media web app",
+    tech: "react,nodejs,firebase",
+    webApp: "https://ice-app-f7186.web.app",
+    sourceCode: "https://github.com/jominjose14/ice",
   },
   {
     name: "SleepyWheels",
@@ -60,14 +76,6 @@ export const projects = [
     tech: "python,neat,pygame",
     demoVideo: "https://youtu.be/2E4o2leGtTk",
     sourceCode: "https://github.com/jominjose14/AI-Flappy-Bird",
-  },
-  {
-    name: "Ice",
-    image: "ice.png",
-    about: "A Twitter-like social media web app",
-    tech: "react,nodejs,firebase",
-    webApp: "https://ice-app-f7186.web.app",
-    sourceCode: "https://github.com/jominjose14/ice",
   },
   {
     name: "Melody",
