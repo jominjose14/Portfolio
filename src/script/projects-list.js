@@ -17,6 +17,14 @@ export const projects = [
     sourceCode: "https://github.com/jominjose14/the-wild-oasis",
   },
   {
+    name: "Odin Tracker",
+    image: "odin-tracker.svg",
+    about: "A progress tracker for students of the Odin project (a popular web dev course) who are fans of the game Elden Ring",
+    tech: "n-ary tree,react,tailwind,supabase",
+    webApp: "https://odin-tracker.vercel.app",
+    sourceCode: "https://github.com/jominjose14/odin-tracker",
+  },
+  {
     name: "Ice",
     image: "ice.png",
     about: "A Twitter-like social media web app",
