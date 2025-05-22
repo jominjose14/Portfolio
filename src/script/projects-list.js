@@ -50,6 +50,13 @@ export const projects = [
     sourceCode: "https://github.com/jominjose14/Mimic",
   },
   {
+    name: "Newtritions",
+    image: "newtritions.jpg",
+    about: "E-commerce web app frontend for fitness and nutrition products",
+    tech: "html,css,javascript",
+    demoVideo: "https://drive.google.com/file/d/1HTtS5vsRIkHweJbTqwX5sGTAzAQB4aJL/view?usp=drive_link",
+  },
+  {
     name: "Flame",
     image: "flame.jpg",
     about:
