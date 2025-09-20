@@ -1,24 +1,24 @@
 {
-  "name": "mylinktree",
-  "version": "1.0.0",
+  "name": "portfolio",
+  "private": true,
+  "version": "0.0.0",
   "description": "Showcases a profile with links to various categories of activities & projects",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "build:w": "vite build --watch"
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "typescript": "~5.8.3",
+    "vite": "^7.1.6"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jominjose14/MyLinkTree.git"
+    "url": "git+https://github.com/jominjose14/Portfolio.git"
   },
   "author": "jomin",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jominjose14/MyLinkTree/issues"
-  },
-  "homepage": "https://github.com/jominjose14/MyLinkTree#readme",
-  "devDependencies": {
-    "vite": "^4.4.9"
-  }
+  "homepage": "https://jominjose14.github.io/Portfolio"
 }
