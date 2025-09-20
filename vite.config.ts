@@ -2,8 +2,8 @@ import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
 export default defineConfig({
+  base: '/Portfolio/',
   build: {
-    outDir: 'docs',
     rollupOptions: {
       input: {
         index: resolve(__dirname, 'index.html'),
