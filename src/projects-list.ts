@@ -7,6 +7,7 @@ export const projects: Project[] = [
         about: "A social media web app for learners",
         tech: "java,springboot,docker,nginx,redis,postgresql,typescript,react",
         webApp: "https://peerpedia.onrender.com",
+        demoVideo: "https://youtu.be/sX2uJ_SxOAM",
         sourceCode: "https://github.com/jominjose14/peerpedia",
     },
     {
@@ -15,6 +16,7 @@ export const projects: Project[] = [
         about: "An online multiplayer air hockey game web app",
         tech: "golang,html canvas,websockets",
         webApp: "https://goal-pb1a.onrender.com",
+        demoVideo: "https://youtu.be/B8xrVml8mBA",
         sourceCode: "https://github.com/jominjose14/goal",
     },
     {
@@ -23,13 +25,14 @@ export const projects: Project[] = [
         about: "Ecommerce recommendation engine built from scratch",
         tech: "python,bow,tf-idf,nltk,pandas,flask,typescript",
         webApp: "https://apparelkart.onrender.com",
+        demoVideo: "https://youtu.be/J-kAl7L6Tlo",
         sourceCode: "https://github.com/jominjose14/apparelkart",
     },
     {
         name: "SleepyWheels",
         image: "sleepywheels.jpg",
         about: "An app that detects & sounds an alarm when the driver falls asleep",
-        tech: "python,keras,efficientnetv2,node,postgresql",
+        tech: "python,cnn,efficientnetv2,keras,node,postgresql",
         webApp: "http://jominjose.42web.io/dashboard.php?i=1",
         demoVideo: "https://www.youtube.com/watch?v=KaCROQi2XRs",
         sourceCode: "https://github.com/jominjose14/SleepyWheels",
