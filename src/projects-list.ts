@@ -73,9 +73,9 @@ export const projects: Project[] = [
     {
         name: "Newtritions",
         image: "newtritions.jpg",
-        about: "E-commerce web app frontend for fitness and nutrition products",
-        tech: "html,css,javascript,wordpress",
-        demoVideo: "https://drive.google.com/file/d/1HTtS5vsRIkHweJbTqwX5sGTAzAQB4aJL/view?usp=drive_link",
+        about: "Website frontend for an e-commerce platform selling fitness and nutrition products",
+        tech: "html,css,javascript,paypal api,wordpress",
+        demoVideo: "https://youtu.be/pOz4QTflRFY",
     },
     {
         name: "Flame",
