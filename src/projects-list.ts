@@ -4,7 +4,7 @@ export const projects: Project[] = [
     {
         name: "Peerpedia",
         image: "peerpedia.svg",
-        about: "A social media web app for learners",
+        about: "A barter-learning social media web app with real-time chat",
         tech: "java,springboot,docker,nginx,redis,postgresql,typescript,react",
         webApp: "https://peerpedia.onrender.com",
         demoVideo: "https://youtu.be/sX2uJ_SxOAM",
@@ -13,7 +13,7 @@ export const projects: Project[] = [
     {
         name: "Goal",
         image: "goal.svg",
-        about: "An online multiplayer air hockey game web app",
+        about: "A real-time online multiplayer air hockey game web app",
         tech: "golang,html canvas,websockets",
         webApp: "https://goal-pb1a.onrender.com",
         demoVideo: "https://youtu.be/B8xrVml8mBA",
@@ -22,7 +22,7 @@ export const projects: Project[] = [
     {
         name: "ApparelKart",
         image: "apparelkart.svg",
-        about: "Ecommerce recommendation engine built from scratch",
+        about: "E-commerce recommendation engine built from scratch",
         tech: "python,bow,tf-idf,nltk,pandas,flask,typescript",
         webApp: "https://apparelkart.onrender.com",
         demoVideo: "https://youtu.be/J-kAl7L6Tlo",
@@ -31,7 +31,7 @@ export const projects: Project[] = [
     {
         name: "SleepyWheels",
         image: "sleepywheels.jpg",
-        about: "An app that detects & sounds an alarm when the driver falls asleep",
+        about: "A driver drowsiness detection system that alerts the driver before they fall asleep",
         tech: "python,cnn,efficientnetv2,keras,node,postgresql",
         webApp: "http://jominjose.42web.io/dashboard.php?i=1",
         demoVideo: "https://www.youtube.com/watch?v=KaCROQi2XRs",
@@ -40,7 +40,7 @@ export const projects: Project[] = [
     {
         name: "The Wild Oasis",
         image: "the-wild-oasis.png",
-        about: "A hotel management web app",
+        about: "A hotel management web app to manage cabins, bookings & checkouts",
         tech: "react,react-router,tailwindcss,node,postgresql",
         webApp: "https://the-wild-oasis-mgmt.vercel.app",
         demoVideo: "https://youtu.be/vajksh7zW9M",
@@ -57,7 +57,7 @@ export const projects: Project[] = [
     {
         name: "Ice",
         image: "ice.png",
-        about: "A Twitter-like social media web app",
+        about: "A Twitter-like social media web app with an icy theme",
         tech: "react,material-ui,node,firebase,firestore",
         webApp: "https://ice-app-f7186.web.app",
         sourceCode: "https://github.com/jominjose14/ice",
@@ -65,7 +65,7 @@ export const projects: Project[] = [
     {
         name: "Mimic",
         image: "mimic.png",
-        about: "An app for using Android by making air gestures that are captured by the selfie camera and translated to swipes",
+        about: "An app for using Android by making touch-free gestures that are captured by the selfie camera and translated to swipes",
         tech: "java,android,mlkit",
         demoVideo: "https://youtu.be/F9RwOJvrfzw",
         sourceCode: "https://github.com/jominjose14/Mimic",
@@ -80,18 +80,15 @@ export const projects: Project[] = [
     {
         name: "Flame",
         image: "flame.jpg",
-        about:
-            "Game: escape from a fiery castle full of explosive traps and monsters",
+        about: "An adventure game: escape from a fiery castle full of explosive traps and monsters",
         tech: "unreal engine 5",
         demoVideo: "https://youtu.be/7fJv2bOYd84",
-        download:
-            "https://drive.google.com/file/d/1qUhjNmYzwxXGe5akgQ0y2EurWHvWqiF4/view?usp=share_link",
+        download: "https://drive.google.com/file/d/1qUhjNmYzwxXGe5akgQ0y2EurWHvWqiF4/view?usp=share_link",
     },
     {
         name: "FaceMask",
         image: "facemask.jpg",
-        about:
-            "A face mask detector build to ensure public safety during an airborne pandemic",
+        about: "A face mask detector built to ensure public safety during an airborne pandemic",
         tech: "python,keras,resnet50,mobilenetv2",
         demoVideo: "https://www.youtube.com/watch?v=DMgSwCbm8EM",
         sourceCode: "https://github.com/jominjose14/FaceMask",
@@ -99,8 +96,7 @@ export const projects: Project[] = [
     {
         name: "AI Personal Trainer",
         image: "personal-trainer.jpg",
-        about:
-            "An AI that monitors angles made during reps to ensure workout quality",
+        about: "An AI that monitors angles made during reps to ensure workout quality",
         tech: "python,mediapipe,opencv",
         demoVideo: "https://youtu.be/cy5hFlAnVS8",
         sourceCode: "https://github.com/jominjose14/AI-Personal-Trainer",
